@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Produtos</title>
+</head>
+<body>
+    <header>
+        <h1>Nossos Produtos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="checkout.html" id="checkout-link">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Explore Nossos Produtos</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="imagens/produto1.jpg" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p>Descrição detalhada do produto 1.</p>
+                <p>R$ 99,90</p>
+                <button onclick="adicionarAoCarrinho('Produto 1', 99.90)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="produto2.jpg" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p>Descrição detalhada do produto 2.</p>
+                <p>R$ 149,90</p>
+                <button onclick="adicionarAoCarrinho('Produto 2', 149.90)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Minha Loja Virtual</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
